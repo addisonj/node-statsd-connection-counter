@@ -1,12 +1,12 @@
 {
   "name": "statsd-connection-counter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A small lib using node-statsd-client to count incoming connections as well as globalAgent connections and queue length by host",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "repository": "git://github.com/addisonj/node-statsd-connection-counter.git",
   "keywords": [
     "statsd",
     "graphite",
