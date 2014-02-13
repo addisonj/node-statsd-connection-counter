@@ -10,7 +10,11 @@ module.exports = function (sdc, server, interval, agent) {
   agent = agent || http.globalAgent
 
   setInterval(function() {
-    sdc.gauge("connections.server_in", server.connections)
+    server.getConnections(function(err, count) {
+      if (!err && count) {
+        sdc.gauge("connections.server_in", count)
+      }
+    })
     for (var host in agent.sockets) {
       var cons = agent.sockets[host]
       sdc.gauge("connections.out_by_host." + filterHostname(host), cons.length)
