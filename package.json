@@ -15,7 +15,7 @@
   ],
   "engines": {
     "node": ">=0.10"
-  }
+  },
   "author": "Addison Higham <addisonj@gmail.com> (github.com/addisonj)",
   "license": "BSD"
 }
