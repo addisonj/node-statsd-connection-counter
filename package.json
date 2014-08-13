@@ -1,6 +1,6 @@
 {
   "name": "statsd-connection-counter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A small lib using node-statsd-client to count incoming connections as well as globalAgent connections and queue length by host",
   "main": "index.js",
   "scripts": {
