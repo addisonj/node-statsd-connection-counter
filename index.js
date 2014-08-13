@@ -2,7 +2,7 @@ var http = require("http")
 
 // replace dots with dashes and colon with blank as not to conflict with graphite/statsd
 function filterHostname(host) {
-  host.replace(/\./gi, "_").replace(/:/gi, "")
+  return host.replace(/\./gi, "_").replace(/:/gi, "")
 }
 
 module.exports = function (sdc, server, interval, agent) {
